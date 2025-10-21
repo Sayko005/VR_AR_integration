@@ -332,7 +332,7 @@ export default function App() {
           <div className="flex gap-3 mt-2 flex-wrap">
             <Button onClick={joinRoom} disabled={loading}>{loading ? "Joining..." : "Create / Join"}</Button>
             <Button onClick={() => startQuiz(false)} disabled={!canStart}>Start</Button>
-            <Button onClick={() => startQuiz(true)}>Solo Start (debug)</Button>
+            
           </div>
           <div className="text-gray-400 text-sm mt-3">
             Players in room: {playersList.length ? playersList.join(", ") : "—"}
